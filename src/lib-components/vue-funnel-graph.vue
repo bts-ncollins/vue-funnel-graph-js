@@ -48,7 +48,7 @@
 				"
 			>
 				<div class="label__value">{{ value }}</div>
-				<b-link :to="labels[index].route">
+				<router-link to="labels[index].route">
 					<div class="label__title" v-if="labels">
 						{{ labels[index].label }}
 					</div>
@@ -58,7 +58,7 @@
 					>
 						{{ percentages()[index] }}%
 					</div>
-				</b-link>
+				</router-link>
 				<div class="label__segment-percentages" v-if="is2d()">
 					<ul class="segment-percentage__list">
 						<li v-for="(subLabel, j) in subLabels" :key="j">
