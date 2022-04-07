@@ -48,7 +48,7 @@
 				"
 			>
 				<div class="label__value">{{ value }}</div>
-				<router-link to="labels[index].route">
+				<router-link :to="labels[index].route">
 					<div class="label__title" v-if="labels">
 						{{ labels[index].label }}
 					</div>
